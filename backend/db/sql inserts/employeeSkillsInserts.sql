@@ -1,0 +1,9 @@
+insert into EmployeeSkills (employee_ID, skill_ID) values ('1', '1');
+insert into EmployeeSkills (employee_ID, skill_ID) values ('2', '2');
+insert into EmployeeSkills (employee_ID, skill_ID) values ('3', '3');
+insert into EmployeeSkills (employee_ID, skill_ID) values ('4', '4');
+insert into EmployeeSkills (employee_ID, skill_ID) values ('5', '2');
+insert into EmployeeSkills (employee_ID, skill_ID) values ('6', '1');
+insert into EmployeeSkills (employee_ID, skill_ID) values ('1', null);
+insert into EmployeeSkills (employee_ID, skill_ID) values ('1', '2');
+insert into EmployeeSkills (employee_ID, skill_ID) values ('1', '3');

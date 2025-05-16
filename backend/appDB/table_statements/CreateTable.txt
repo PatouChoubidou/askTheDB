@@ -1,0 +1,73 @@
+CREATE TABLE Users (
+    user_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT NOT NULL,
+    email TEXT NOT NULL,
+    first_name TEXT,
+    last_name TEXT,
+    disabled INTEGER,
+    hashed_password TEXT,
+    created_at TEXT NOT NULL DEFAULT (datetime(CURRENT_TIMESTAMP, 'localtime'))
+);
+
+
+CREATE TABLE Bookmarks (
+    bookmark_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    question TEXT,
+    sql TEXT,
+    user_ID INTEGER,
+    created_at DATETIME NOT NULL DEFAULT (datetime(CURRENT_TIMESTAMP, 'localtime')),
+        CONSTRAINT fk_users FOREIGN KEY (user_ID) REFERENCES Users(user_ID) ON DELETE CASCADE
+);
+
+
+CREATE TABLE Categories (
+    categorie_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    categorie TEXT
+);
+
+
+CREATE TABLE BookmarkCategories (
+    bookmark_categorie_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    categorie_ID INTEGER,
+    bookmark_ID INTEGER,
+        CONSTRAINT fk_categories FOREIGN KEY (categorie_ID) REFERENCES Categories(categorie_ID) ON DELETE CASCADE,
+        CONSTRAINT fk_bookmarks FOREIGN KEY (bookmark_ID) REFERENCES BookmarkCategories(bookmark_ID) ON DELETE CASCADE
+);
+
+
+CREATE TABLE Questions (
+    question_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    question TEXT NOT NULL,
+    sql TEXT,
+    db_response TEXT,
+    explanation TEXT,
+    user_ID INTEGER,
+    created_at DATETIME NOT NULL DEFAULT (datetime(CURRENT_TIMESTAMP, 'localtime')),
+        CONSTRAINT fk_users FOREIGN KEY (user_ID) REFERENCES Users(user_ID) ON DELETE CASCADE
+);
+
+
+CREATE TABLE Ratings (
+    rating_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    question_ID INTEGER NOT NULL,
+    q_interpretation REAL,
+    sql_quality REAL,
+    created_at DATETIME NOT NULL DEFAULT (datetime(CURRENT_TIMESTAMP, 'localtime')),
+        CONSTRAINT fk_questions FOREIGN KEY (question_ID) REFERENCES Questions(question_ID) ON DELETE CASCADE
+);
+
+CREATE TABLE DatabaseConnections (
+    connection_ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    conn_string TEXT NOT NULL,
+    user_ID INTEGER NOT NULL,
+    type TEXT,
+    driver TEXT,
+    dialect TEXT,
+    username TEXT,
+    hashed_password TEXT,
+    host TEXT, 
+    port INTEGER,
+    database_name TEXT,
+    created_at DATETIME NOT NULL DEFAULT (datetime(CURRENT_TIMESTAMP, 'localtime')),
+        CONSTRAINT fk_users FOREIGN KEY (user_ID) REFERENCES Users(user_ID) ON DELETE CASCADE
+);

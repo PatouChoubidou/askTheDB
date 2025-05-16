@@ -1,0 +1,34 @@
+Zum Testen
+
+INSERT INTO Users (username, email, first_name, last_name, disabled, hashed_password) 
+VALUES ('patrice', 'patricekoebel@gmail.com', 'Patrice', 'Bonarius', 1, '$2b$12$bE2ANPmonXnAaMAnuL6QBeUrw4St1U7OgBom.v3sOAe2lCxccEz2a');
+
+INSERT INTO Categories (categorie) 
+VALUES ('Management');
+
+INSERT INTO Categories (categorie) 
+VALUES ('Sales');
+
+INSERT INTO Categories (categorie) 
+VALUES ('HR');
+
+
+INSERT INTO Questions(question, sql, db_response, explanation, user_ID) VALUES ("Show me all employee", "SELECT * FROM EMPLOYEE;", "-", "The database did not respond", 1);
+
+
+INSERT INTO Ratings(question_ID, q_interpretation, sql_quality) VALUES (1, 0.8, 0.8);
+
+
+INSERT INTO Bookmarks(question, sql, user_ID) VALUES ("List all Employee", "SELECT * FROM Employees;", 1);
+
+INSERT INTO BookmarkCategories(categorie_ID, bookmark_ID) VALUES (3, 2);
+INSERT INTO BookmarkCategories(categorie_ID, bookmark_ID) VALUES (1, 1);
+
+
+UPDATE Bookmarks
+SET sql = 'SELECT * FROM Employees;'
+WHERE bookmark_ID = 1;
+
+
+INSERT INTO DatabaseConnections(connection_ID, conn_string, user_ID, type, driver, dialect, username, hashed_password, host, port, database_name) 
+VALUES (1, 'sqlite:///db/testCompany.db', 1, 'sqlite', NULL, 'sqlite', NULL, NULL, NULL, NULL, 'testCompany.db');

@@ -1,0 +1,11 @@
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Asoka', 'Tano', 'alien', 1, 1);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Bob', 'Belzebub', 'noir', 2, 2);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Tristan', 'Trustworthy', 'undefined', 3, 3);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Cashmere', 'Unibrow', 'female', 4, 4);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Tosca', 'Drama', 'female', 5, 5);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Börnd', 'Nörgeltrog', '-', 6, 6);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Greva', 'Tensebaum', 'male', 7, 7);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Kim', 'Yong Un', 'small-fat-ugly', 8, 8);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Gandalf', 'White', 'old', 9, 9);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Patrice', 'Bonarius', 'unspeakable', 10, 10);
+insert into Employees (first_name, last_name, gender, position_ID, contract_ID) values ('Torcle', 'Tsaksis', 'male', null, 11);

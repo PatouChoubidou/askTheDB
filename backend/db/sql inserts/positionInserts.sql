@@ -1,0 +1,10 @@
+insert into Positions (departement, job_description, contact_ID) values ('Asylym', 'Pick up hairy balls from the ground', 1);
+insert into Positions (departement, job_description, contact_ID) values ('Kitchen', 'Mostly fighting against rats', 1);
+insert into Positions (departement, job_description, contact_ID) values ('Accountant', 'One need to count a lot', 1);
+insert into Positions (departement, job_description, contact_ID) values ('Brewery', 'Taste everything for quality reasons', 1);
+insert into Positions (departement, job_description, contact_ID) values ('Shipping', 'The job is to always stay in close contact to the boat poeple', 1);
+insert into Positions (departement, job_description, contact_ID) values ('Marketeer', 'Be in a goup of four and fight all for one and one for all', 1);
+insert into Positions (departement, job_description, contact_ID) values ('Garage', 'You need to form a band or a start up of some kind', 1);
+insert into Positions (departement, job_description, contact_ID) values ('Waste', 'They get wasted a lot', 1);
+insert into Positions (departement, job_description, contact_ID) values ('Management', 'You do not need to get up so early', 1);
+insert into Positions (departement, job_description, contact_ID) values ('Sales', 'The job requires you to talk a lot', 1);

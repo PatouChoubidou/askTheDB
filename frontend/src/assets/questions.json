@@ -1,0 +1,16 @@
+{   
+   "questions": [
+        "Who bought something like a",
+        "Who is a women?",
+        "Who bought the car?",  
+        "Who ordered the most?",
+        "Show me all information you have on a Product like",
+        "What is the most expensive product?",
+        "Which products are out of stock. Use stock_quantity",
+        "Which Product was ordered the most",
+        "Show me all customers that live in",
+        "How many orders lie in the future. Today is",
+        "Is there a like",
+        "Show me all information you have on"
+    ]
+}
