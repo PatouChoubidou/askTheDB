@@ -21,14 +21,14 @@ https://ollama.com/library<br>
 using a machine with at least 8GB RAM<br>
 
 ### install python packages
-create a virtual enviroment<br>
-```source myvenv/bin/activate```<br>
+create a virtual enviroment in backend folder if not already there<br>
+```python -m venv myvenv```<br>
 install all packages<br>
 ```python3 -m pip install -r requirements.txt```
 
 ## Run it
 
-- source myvenv/bin/activate
+- activate venv ```source myvenv/bin/activate```
 - run ollama with your chosen model
 - create .env file 
 - add ```MODEL_NAME=yourmodelname``` to .env
