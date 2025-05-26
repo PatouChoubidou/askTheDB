@@ -1,7 +1,6 @@
 # askTheDB
-
 This project was part of my bachelor thesis.<br>
-It contains a web app which enables the user to pose questions in natural language to a test-sqlite-database using a locally running LLM.
+It contains a test dummy web app which enables the user to pose questions in natural language to a test-sqlite-database using a locally running LLM.
 <br>
 
 ## Tools
@@ -18,7 +17,7 @@ It contains a web app which enables the user to pose questions in natural langua
 ## Requirements
 Ollama running CodeGemma<br>
 https://ollama.com/<br>
-https://ollama.com/library/codegemma<br>
+https://ollama.com/library<br>
 using a machine with at least 8GB RAM<br>
 
 ## Run it
