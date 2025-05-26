@@ -21,10 +21,12 @@ https://ollama.com/library<br>
 using a machine with at least 8GB RAM<br>
 
 ### install python packages
-source myvenv/bin/activate<br>
-python3 -m pip install -r requirements.txt
+create a virtual enviroment<br>
+```source myvenv/bin/activate```<br>
+install all packages<br>
+```python3 -m pip install -r requirements.txt```
 
-### run it
+## Run it
 
 - source myvenv/bin/activate
 - run ollama with your chosen model
@@ -33,11 +35,14 @@ python3 -m pip install -r requirements.txt
 - add ```APP_DB_URL=sqlite:///appDB/app.db``` to .env 
 
 #### start the servers
+```
 /frontend<br>
 npm run dev
-
+```
+```
 /backend<br>
 fastapi run main.py
+```
 
 
 
