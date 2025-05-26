@@ -36,11 +36,11 @@ install all packages<br>
 
 #### start the servers
 ```
-/frontend<br>
+cd frontend
 npm run dev
 ```
 ```
-/backend<br>
+cd backend
 fastapi run main.py
 ```
 
