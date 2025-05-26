@@ -3,6 +3,9 @@ This project was part of my bachelor thesis.<br>
 It contains a test dummy web app which enables the user to pose questions in natural language to a test-sqlite-database using a locally running LLM.
 <br>
 
+https://github.com/user-attachments/assets/4e271ea6-3a02-40c8-9a5b-a9d55407b28e
+
+
 ## Tools
 ### model
 - ollama
