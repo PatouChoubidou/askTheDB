@@ -21,7 +21,7 @@ https://ollama.com/library<br>
 using a machine with at least 8GB RAM<br>
 
 ### install python packages
-source myvenv/bin/activate
+source myvenv/bin/activate<br>
 python3 -m pip install -r requirements.txt
 
 ### run it
