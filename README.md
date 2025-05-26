@@ -27,10 +27,10 @@ using a machine with at least 8GB RAM<br>
 - add ```APP_DB_URL=sqlite:///appDB/app.db``` to .env 
 
 
-/frontend
+/frontend<br>
 npm run dev
 
-/backend
+/backend<br>
 fastapi run main.py
 
 
