@@ -15,10 +15,10 @@ It contains a test dummy web app which enables the user to pose questions in nat
 - Vue3.js
 
 ## Requirements
-Ollama running CodeGemma<br>
+Download ollama and a model of your choice<br>
 https://ollama.com/<br>
 https://ollama.com/library<br>
-using a machine with at least 8GB RAM<br>
+Needs maybe a machine with at least 8GB RAM<br>
 
 ### install python packages
 create a virtual enviroment in backend folder if not already there<br>
