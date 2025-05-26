@@ -20,13 +20,19 @@ https://ollama.com/<br>
 https://ollama.com/library<br>
 using a machine with at least 8GB RAM<br>
 
-## Run it
+### install python packages
+source myvenv/bin/activate
+python3 -m pip install -r requirements.txt
+
+### run it
+
+- source myvenv/bin/activate
 - run ollama with your chosen model
 - create .env file 
 - add ```MODEL_NAME=yourmodelname``` to .env
 - add ```APP_DB_URL=sqlite:///appDB/app.db``` to .env 
 
-
+#### start the servers
 /frontend<br>
 npm run dev
 
