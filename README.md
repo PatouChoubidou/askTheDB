@@ -1,6 +1,6 @@
 # askTheDB
 
-This Project is part of bachelor thesis.<br>
+This project was part of my bachelor thesis.<br>
 It contains a web app which enables the user to pose questions in natural language to a test-sqlite-database using a locally running LLM.
 <br>
 
@@ -21,5 +21,12 @@ https://ollama.com/<br>
 https://ollama.com/library/codegemma<br>
 using a machine with at least 8GB RAM<br>
 
-## Mantainer
+## Run it
+cd frontend
+npm run dev
+
+cd backend
+fastapi run main.py
+
+ollama run codelama
 

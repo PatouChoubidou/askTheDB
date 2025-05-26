@@ -8,8 +8,15 @@ import backend.db.testCompany_tableInfos as testCompany_tableInfos
 import datetime 
 import re
 import sqlite3
+import os
+from dotenv import load_dotenv, find_dotenv
+
+# use env
+load_dotenv(find_dotenv())
 
 # vars
+
+model_name = os.environ.get('MODEL_NAME')
 db = SQLDatabase.from_uri("sqlite:///db/testCompany.db")
  
 async def getDBTables():
@@ -156,7 +163,7 @@ async def generate_SQL(question, db, table_infos, max_k):
         """
     
     input = [db_dialect, table_names, question, table_infos, max_k]
-    llm = Ollama(model="codegemma", system=prompt, temperature=0.9)
+    llm = Ollama(model=model_name, system=prompt, temperature=0.9)
     generatedSQLQuery = llm.invoke(input)
     # strip any backticks, sanitize output
     generatedSQLQuery=re.sub("sql","",generatedSQLQuery)
@@ -187,7 +194,7 @@ async def explainSQL(db, question, db_reply):
         If the reply says: 'You are not allowed to alter the database. Please try again', just repeat the sentence.
         """
 
-        llm = Ollama(model="codegemma", system=prompt2, temperature=0.1)
+        llm = Ollama(model=model_name, system=prompt2, temperature=0.1)
         input2 = [db_dialect, table_names, question, db_reply]
         explanation = llm.invoke(input2)
         out = explanation
