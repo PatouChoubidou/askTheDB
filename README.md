@@ -22,11 +22,18 @@ https://ollama.com/library/codegemma<br>
 using a machine with at least 8GB RAM<br>
 
 ## Run it
-cd frontend
+- run ollama with your chosen model
+- create .env file 
+- add ```MODEL_NAME=yourmodelname``` to .env
+- add ```APP_DB_URL=sqlite:///appDB/app.db``` to .env 
+
+
+/frontend
 npm run dev
 
-cd backend
+/backend
 fastapi run main.py
 
-ollama run codelama
+
+
 
