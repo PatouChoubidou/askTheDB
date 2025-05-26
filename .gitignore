@@ -2,3 +2,5 @@ backend/myvenv
 backend/__pycache__
 
 AskADb.mp4
+
+.DS_Store
